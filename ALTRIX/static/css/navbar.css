@@ -1,0 +1,19 @@
+.navbar-brand{
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand > img{
+    height: 50px;
+    width: 100px;
+    margin-left: -30px;
+}
+.nav-links  li{
+    margin: 0 10px;
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+}
+
+.nav-links li:hover>a {
+    color: #A4C5E4 !important;
+    transform: scale(1.1);
+}

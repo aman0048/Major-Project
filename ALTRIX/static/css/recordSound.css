@@ -1,0 +1,89 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    padding:0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background: #b0d4e3;
+    background: -moz-radial-gradient(center, ellipse cover, #b0d4e3 0%, #82a4ce 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #b0d4e3 0%,#82a4ce 100%);
+    background: radial-gradient(ellipse at center, #b0d4e3 0%,#82a4ce 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0d4e3', endColorstr='#82a4ce',GradientType=1 );
+}
+
+
+/* Recording Section */
+.recording{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.recording-heading{
+    text-align: center;
+    padding-bottom: 30px;
+    color: rgb(228, 227, 227);
+    letter-spacing: 1px;
+}
+
+#controls {
+    margin-top: 2rem;
+}
+
+button {
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.15rem;
+    background: #dd3e29;
+    margin-left: 2px;
+    box-shadow: inset 0 -0.15rem 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #ec210b;
+    transform: scale(1.1);
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+button:active {
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+    line-height: 3rem;
+}
+
+button:disabled {
+    pointer-events: none;
+    background: rgb(192, 192, 192);
+    color: rgb(71, 68, 68);
+}
+
+audio {
+    display: block;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+#formats {
+    margin-top: 0.5rem;
+    font-size: 80%;
+}
+
+footer{
+    background-color: white;
+}

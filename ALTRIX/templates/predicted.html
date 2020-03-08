@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/predicted.css') }}">
+    
+    <!-- Prediction PART -->
+    <section class="prediction">
+        <div id="predicted" class="row container">
+           
+        </div>
+        <button id='submit' class="btn btn-success">SUBMIT</button>
+        <div class="container" id="output"></div>
+    </section>
+
+    <script src = "{{ url_for('static', filename = 'prediction.js') }}"></script>
+
+
+{% endblock %}    

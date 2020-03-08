@@ -1,0 +1,55 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+body{
+    padding:0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Form */
+.form{
+    color: white;
+    background: #79d452;
+    background: -moz-linear-gradient(45deg, #79d452 1%, #65ab3d 44%, #2ba129 100%);
+    background: -webkit-linear-gradient(45deg, #79d452 1%,#65ab3d 44%,#2ba129 100%);
+    background: linear-gradient(45deg, #79d452 1%,#65ab3d 44%,#2ba129 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79d452', endColorstr='#2ba129',GradientType=1 );
+    margin-top: 50px;
+    border: 1px solid lightgray;
+    width: 60%;
+    margin: 50px auto;
+}
+
+.form > form {
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+#inputAddress{
+    width: 80%;
+}
+
+#rule {
+    width: 90%;
+    margin: 40px auto;
+    content: '';
+    border: 1px solid white; 
+}
+
+form>h2, .attendee>h3{
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+input[type="text"]{
+    font-family: 'Fredoka', 'Roboto', sans-serif;
+    font-size: 20px;
+}  

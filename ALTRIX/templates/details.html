@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/recordSound.css') }}">
+    
+    <!-- Recording -->
+    <section class="recording">
+        <div class="recording-heading">
+            <h1>Pease say out your info</h1>
+        </div>
+        <div id="controls">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-2 buttons">
+                    <button id="recordButton"><i class="far fa-play-circle"></i> Record</button>
+                </div>
+                <div class="col-md-2 buttons">
+                    <button id="pauseButton" disabled><i class="far fa-pause-circle"></i> Pause</button>
+                </div>
+                <div class="col-md-2 buttons">
+                    <button id="stopButton" disabled><i class="far fa-stop-circle"></i> Stop</button>
+                </div>
+                <div class="col-md-2 buttons">
+                    <a id='saveSound'><button id="sendBtn" disabled> <i class="fas fa-share-square"></i>SEND</button></a>
+                </div>
+                <div class="col-md-12"></div>
+            </div>   
+        </div>
+        <br />
+        <div id="formats container" style="width: 40%; margin:auto; margin-top:50px;margin-bottom:250px;">
+            <button class='btn btn-warning' id='ocr-call'>OCR</button>
+        </div>
+    </section>
+    
+    <!-- RecoRderJS  -->
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+
+    <script src = "{{ url_for('static', filename = 'app-js.js') }}"></script>
+
+{% endblock %}    

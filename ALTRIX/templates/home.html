@@ -1,0 +1,82 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+
+    <!-- LANDING PAGE -->
+    <section id="landing-page">
+        <div class="row ">
+            <div class="col-md-6 col-sm-12">
+                <div class="landing-content container">
+                    <h1>We Care for Your Health Every Moment</h1>
+                    <p>If you got any health issue, we got you covered. </p>
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PROCEDURE PART -->
+    <section class="procedure">
+        <div class="container">
+            <div class="procedure-heading">
+                <h1>Procedure Category</h1>
+            </div>
+            <div class="procedure-photos">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 hovereffect">
+                        <img src="{{ url_for('static', filename = 'img/Procedure/p1.jpg') }}" alt="Group Training">
+                        <div class="overlay">
+                            <h2>MEDICAL<br> COUNSELLING</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 hovereffect">
+                        <img src="{{ url_for('static', filename = 'img/Procedure/p2.jpg') }}" alt="Group Training">
+                        <div class="overlay">
+                            <h2>EMERGENCY<br> TREATMENT</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 hovereffect">
+                        <img src="{{ url_for('static', filename = 'img/Procedure/p3.jpg') }}" alt="Group Training">
+                        <div class="overlay">
+                            <h2>HEALTH<br> CARE</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SERVICES PART -->
+    <section class="service">
+        <div class="services">
+            <div class="services-heading">
+                <h1>Our Services</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem fugit delectus consectetur ratione amet autem at ullam, natus totam dicta?</p>
+            </div>
+            <div class="services-photos">
+                <div class="row" id='process'>
+                    <div class="col-md-3 col-sm-6 col-xs-12" align="center">
+                        <i class="far fa-hospital fa-3x"></i>
+                        <h5>24/7 Emergency</h5>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12" align="center">
+                        <i class="fas fa-user-md fa-3x"></i>
+                        <h5>Expert Consultation
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12" align="center">
+                        <i class="fas fa-plus-circle fa-3x"></i>
+                        <h5>Intensive Care</h5>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12" align="center">
+                            <i class="fas fa-heartbeat fa-3x"></i>
+                        <h5>Improve Health</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}    

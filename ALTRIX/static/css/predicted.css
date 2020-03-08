@@ -1,0 +1,52 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body{
+    background-color: lightgray;
+}
+
+.prediction{
+    width: 50%;
+    margin: 50px auto;
+}
+
+input{
+    margin-left: 0px;   
+    width: auto;
+    /* border:2px dotted #00f; */
+    display:block;
+    background:#ff0000;
+}
+
+input::selection{
+    outline: none;
+}
+
+.col-md-3{
+    text-align: left;
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#output{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    margin-top: 30px;
+}
+
+#output{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding:30px;
+    color: rgb(182, 49, 49);
+}

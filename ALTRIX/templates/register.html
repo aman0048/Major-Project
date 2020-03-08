@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/register.css') }}">
+    <!-- FORM -->
+    <section class="register">
+        <div class="form">
+            <form id="formFill">
+                <h2>Patient Details</h2>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="patient_name">Patient Name</label>
+                        <input type="text" class="form-control" id="patient_name" >
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="patient_gender">Patient Gender</label>
+                        <input type="text" class="form-control" id="patient_gender" >
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="patient_age">Age</label>
+                        <input type="text" class="form-control" id="patient_age">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="patient_phone_number">Phone</label>
+                        <input type="text" class="form-control" id="patient_phone_number">
+                    </div>
+                </div>
+                <br/>
+                <div id="rule"></div>
+                <div class="attendee">
+                    <h3>Attendee Details</h3>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Attendee_name">Attendee Name</label>
+                            <input type="text" class="form-control" id="Attendee_name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Attendee_relationship_with_patient">Attendee Relationship</label>
+                            <input type="text" class="form-control" id="Attendee_relationship_with_patient">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="Attendee_phone_number">Attendee Phone Number</label>
+                            <input type="text" class="form-control" id="Attendee_phone_number">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section> 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(e){ 
+            console.log('ONLOAD')
+            var q = localStorage.getItem("patient_name");
+            var w = localStorage.getItem("patient_age");
+            var e = localStorage.getItem("patient_gender");
+            var r = localStorage.getItem("patient_phone_number");			
+            var t = localStorage.getItem("Attendee_name");
+            var y = localStorage.getItem("Attendee_phone_number");
+            var u = localStorage.getItem("Attendee_relationship_with_patient");
+
+            document.getElementById("patient_name").value = q;
+            document.getElementById("patient_age").value = w;
+            document.getElementById("patient_gender").value = e;
+            document.getElementById("patient_phone_number").value = r;
+            document.getElementById("Attendee_name").value = t;
+            document.getElementById("Attendee_phone_number").value = y;
+            document.getElementById("Attendee_relationship_with_patient").value = u;
+        })
+        
+    </script>
+
+{% endblock %}    
+
